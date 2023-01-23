@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+/* CSS */ 
+body {
+  background: #000000;
+  color: #fff;
+  font-family: 'Roboto'
+}
+
+.logo {
+  font-family: 'Bebas Neue';
+}
