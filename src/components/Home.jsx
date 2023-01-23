@@ -12,8 +12,8 @@ export default function Home({randomMovie}) {
     <div className='w-full h-[800px]'>
         <div className='w-full h-full'>
             <div className='absolute w-full h-[800px] bg-gradient-to-r from-black'></div>
-            <img src={`https://image.tmdb.org/t/p/original/${randomMovie?.backdrop_path}`} alt={randomMovie?.title} className='w-full h-full object-cover' />
-            <div className='absolute top-[30%] w-full px-[6rem]'>
+            <img src={`https://image.tmdb.org/t/p/original/${randomMovie?.backdrop_path}`} alt={randomMovie?.title} className='w-full h-full object-cover ' />
+            <div className='absolute top-[30%] w-full px-[2rem] lg:px-[6rem]'>
                 <div className='w-[800px]'>
                     <p className='text-6xl font-bold'>{randomMovie?.title}</p>
                     <p className='text-xl font-bold mt-[1rem]'>Available Now</p>
