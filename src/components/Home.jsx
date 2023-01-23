@@ -9,9 +9,9 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 export default function Home({randomMovie}) {
 
   return (
-    <div className='w-full h-[800px]'>
+    <div className='w-full h-[1000px]'>
         <div className='w-full h-full'>
-            <div className='absolute w-full h-[800px] bg-gradient-to-r from-black'></div>
+            <div className='absolute w-full h-[1000px] bg-gradient-to-r from-black'></div>
             <img src={`https://image.tmdb.org/t/p/original/${randomMovie?.backdrop_path}`} alt={randomMovie?.title} className='w-full h-full object-cover ' />
             <div className='absolute top-[30%] w-full px-[2rem] lg:px-[6rem]'>
                 <div className='w-[800px]'>
