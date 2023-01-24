@@ -32,7 +32,7 @@ export default function SignUp() {
             <form onSubmit={handleSubmit} className='w-full flex flex-col items-center'>
                 <input onChange={(e) => setEmail(e.target.value)} autoComplete='email' type="text" placeholder='E-mail' className='w-[70%] py-3 rounded mt-[2rem] px-4 bg-gray-700/60 border-none outline-none focus:bg-gray-700/90' />
                 <input onChange={(e) => setPassword(e.target.value)} autoComplete='password' type="password" placeholder='Password' className='w-[70%] mt-[1rem] py-3 rounded px-4 bg-gray-700/60 border-none outline-none focus:bg-gray-700/90' />
-                <input type="submit" value="Log In" className='mt-[2rem] bg-red-600 w-[70%] py-3 rounded' />
+                <input type="submit" value="Sign Up" className='mt-[2rem] bg-red-600 w-[70%] py-3 rounded cursor-pointer' />
             </form>
             <div className='w-[70%]  mt-[1.5rem] flex justify-between m-auto'>
                 <div>
