@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import Home from './Home'
 import Slider from './Slider'
 import getMovies from '../api/apiRequest'
+import Footer from './Footer'
 
 export default function Main({randomMovie}) {
   return (
@@ -13,6 +14,7 @@ export default function Main({randomMovie}) {
         <Slider title='Popular Now' fetchURL={getMovies.popularMovies} sliderId='2' />
         <Slider title='Trending Now' fetchURL={getMovies.trendingMovies} sliderId='3' />
         <Slider title='Top Rated Movies' fetchURL={getMovies.topMovies} sliderId='4' />
+        <Footer />
     </div>
   )
 }
