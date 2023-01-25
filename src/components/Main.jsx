@@ -9,10 +9,10 @@ export default function Main({randomMovie}) {
     <div>
         <NavBar />
         <Home randomMovie={randomMovie} />
-        <Slider title='Incoming Movies' fetchURL={getMovies.comingMovies} />
-        <Slider title='Popular Now' fetchURL={getMovies.popularMovies} />
-        <Slider title='Trending Now' fetchURL={getMovies.trendingMovies} />
-        <Slider title='Top Rated Movies' fetchURL={getMovies.topMovies} />
+        <Slider title='Incoming Movies' fetchURL={getMovies.comingMovies} sliderId='1' />
+        <Slider title='Popular Now' fetchURL={getMovies.popularMovies} sliderId='2' />
+        <Slider title='Trending Now' fetchURL={getMovies.trendingMovies} sliderId='3' />
+        <Slider title='Top Rated Movies' fetchURL={getMovies.topMovies} sliderId='4' />
     </div>
   )
 }
