@@ -20,7 +20,7 @@ export default function Home({randomMovie}) {
                     <p className='text-lg mt-[1rem] w-full md:max-w-[70%] lg:max-w-[60%]'>{randomMovie?.overview}</p>
                 </div>
                 <div className='mt-[2rem]'>
-                    <button className='bg-white text-black px-12 py-3 rounded border-black border-solid border text-lg font-bold'><FontAwesomeIcon icon={faPlay}/> Play</button>
+                    <button className='bg-white text-black px-14 py-3 rounded border-black border-solid border text-lg font-bold'><FontAwesomeIcon icon={faPlay}/> Play</button>
                     <button className='bg-gray-700 px-14 py-3 ml-3 rounded text-lg font-bold'>More Info</button>
                 </div>
             </div>

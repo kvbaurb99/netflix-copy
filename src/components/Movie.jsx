@@ -18,7 +18,7 @@ export default function Movie({movie, id}) {
     // if you are logged in and click on heart icon a movie will be saved to your account in firebase data base
     const saveMovie = async () => {
       if (user?.email) {
-        setLike(true)
+        setLike(!like)
         setSaved(true)
         await updateDoc(movieKey, {
           savedMovies: arrayUnion({
