@@ -1,7 +1,3 @@
-import React, { useEffect, useState } from 'react'
-import getMovies from '../api/apiRequest';
-import axios from 'axios';
-import NavBar from './NavBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,7 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {FaHeart, FaRegHeart} from 'react-icons/fa'
-import { faArrowRight, faArrowLeft  } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import { UserAuth } from '../authorization/AuthContext'
 import { db } from '../firebase/firebase'

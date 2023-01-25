@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {FaHeart, FaRegHeart} from 'react-icons/fa'
 import { faArrowRight, faArrowLeft  } from '@fortawesome/free-solid-svg-icons'
 import Movie from './Movie'
 
