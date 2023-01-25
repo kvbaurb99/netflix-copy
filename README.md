@@ -11,3 +11,4 @@ https://netflix-copy-kuba.netlify.app/
 - CSS (Tailwind CSS)
 - JavaScript (React)
 - Firebase for user authentication and data base
+- API from https://www.themoviedb.org/ 
