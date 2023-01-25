@@ -19,3 +19,8 @@ body {
 .logo {
   font-family: 'Bebas Neue';
 }
+
+.login {
+  background: url('https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png');
+  background-size: cover;
+}
