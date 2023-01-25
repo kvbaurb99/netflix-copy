@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import Footer from './Footer';
 
 
 export default function Home({randomMovie}) {
@@ -16,8 +17,8 @@ export default function Home({randomMovie}) {
                     <p className='text-lg mt-[1rem] w-full md:max-w-[70%] lg:max-w-[60%]'>{randomMovie?.overview}</p>
                 </div>
                 <div className='mt-[2rem]'>
-                    <button className='bg-white text-black px-14 py-3 rounded border-black border-solid border text-lg font-bold'><FontAwesomeIcon icon={faPlay}/> Play</button>
-                    <button className='bg-gray-700 px-14 py-3 ml-3 rounded text-lg font-bold'>More Info</button>
+                    <button className='bg-white text-black px-14 py-3 rounded border-black border-solid border text-lg font-bold hover:bg-gray-300'><FontAwesomeIcon size='md' className='px-2' icon={faPlay}/> Play</button>
+                    <button className='bg-gray-700 px-14 py-3 ml-3 rounded text-lg font-bold hover:bg-gray-600'>More Info</button>
                 </div>
             </div>
         </div>
