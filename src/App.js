@@ -1,11 +1,14 @@
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import getMovies from "./api/apiRequest";
-import { Nav } from "react-bootstrap";
+import Main from "./components/Main";
+import { AuthContextProvider } from "./authorization/AuthContext";
+import LogIn from "./auth page/LogIn";
+import SignUp from "./auth page/SignUp";
+import Account from "./auth page/Account";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 
 function App() {
@@ -20,15 +23,18 @@ function App() {
       })
   }, [])
 
-  console.log(movies)
 
   return (
-<BrowserRouter>
-    <NavBar />
-    <Routes>
-      <Route path='/' element={<Home randomMovie={randomMovie} />} />
-    </Routes>
-</BrowserRouter>
+<AuthContextProvider>
+  <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Main randomMovie={randomMovie} />} />
+        <Route path='/login' element={<LogIn />} />
+        <Route path='/signup' element={<SignUp/>} />
+        <Route path='/account' element={<ProtectedRoute><Account /></ProtectedRoute>} />
+      </Routes>
+  </BrowserRouter>
+</AuthContextProvider>
   );
 }
 
